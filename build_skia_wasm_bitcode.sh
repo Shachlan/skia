@@ -3,13 +3,8 @@
 
 patch -p0 < wasm_compatible_build.patch
 
-#eg /home/john/emsdk-portable
-EMSDK="~/emsdk"
 #eg 1.37.27
 EM_VERSION="1.38.28"
-
-~/emsdk/emsdk activate latest
-source ~/emsdk/emsdk_env.sh
 
 ./bin/gn gen ./out/Build-wasm-Release/Release --args="cc=\"emcc\" \
 extra_cflags_cc=[\"-frtti\",\"-s\",\"USE_FREETYPE=1\"] \
