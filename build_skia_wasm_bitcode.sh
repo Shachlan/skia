@@ -1,8 +1,4 @@
 
-#!/bin/bash
-
-patch -p0 < wasm_compatible_build.patch
-
 #eg 1.37.27
 EM_VERSION="1.38.28"
 
